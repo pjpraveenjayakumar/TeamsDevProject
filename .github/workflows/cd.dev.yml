@@ -47,7 +47,7 @@ jobs:
           commands: account login azure 
           service-principal: true
           username: ${{secrets.baa0b203-e66e-4d52-81ad-78974dca24dd}}
-          password: ${{secrets.U~E8Q~NgX5Vz9Y.SBBeAWMoD2qJ968qcQATjvbB.}}
+          password: ${{secrets.Secret}}
           tenant: ${{secrets.6e00d408-3fb9-4acb-9c16-018a10b41982}}
       
       - name: Deploy to hosting environment
