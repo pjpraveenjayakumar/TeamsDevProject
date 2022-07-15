@@ -5,7 +5,7 @@ on:
   # When new commits are pushed onto the main branch.
   push:
     branches:
-      - main
+      - master
 jobs:
   buildAndDeploy:
     runs-on: ubuntu-latest
