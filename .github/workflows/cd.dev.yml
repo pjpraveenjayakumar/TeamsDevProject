@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     # You can uncomment the line below to use environments (refer to https://docs.github.com/en/actions/reference/environments). 
     #environment: test_environment
-    #test
     env:
       # To specify the env name for multi-env feature.
       TEAMSFX_ENV_NAME: dev
@@ -46,9 +45,9 @@ jobs:
         with:
           commands: account login azure 
           service-principal: true
-          username: ${{baa0b203-e66e-4d52-81ad-78974dca24dd}}
-          password: ${{U~E8Q~NgX5Vz9Y.SBBeAWMoD2qJ968qcQATjvbB.}}
-          tenant: ${{6e00d408-3fb9-4acb-9c16-018a10b41982}}
+          username: ${{secrets.AZURE_SERVICE_PRINCIPAL_NAME}}
+          password: ${{secrets.AZURE_SERVICE_PRINCIPAL_PASSWORD}}
+          tenant: ${{secrets.AZURE_TENANT_ID}}
       
       - name: Deploy to hosting environment
         uses: OfficeDev/teamsfx-cli-action@v1
