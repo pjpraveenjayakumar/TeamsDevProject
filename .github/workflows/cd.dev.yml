@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     # You can uncomment the line below to use environments (refer to https://docs.github.com/en/actions/reference/environments). 
     #environment: test_environment
+    #test
     env:
       # To specify the env name for multi-env feature.
       TEAMSFX_ENV_NAME: dev
