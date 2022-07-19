@@ -45,9 +45,9 @@ jobs:
         with:
           commands: account login azure 
           service-principal: true
-          username: ${{secrets.0dca6dc7-1580-4da2-9921-09d5b83dc294}}
-          password: ${{secrets.0V18Q~RwnNGGs1LRsTOUlUvA3OgWq7fB}}
-          tenant: ${{secrets.72f988bf-86f1-41af-91ab-2d7cd011db47}}
+          username: ${{0dca6dc7-1580-4da2-9921-09d5b83dc294}}
+          password: ${{0V18Q~RwnNGGs1LRsTOUlUvA3OgWq7fB}}
+          tenant: ${{72f988bf-86f1-41af-91ab-2d7cd011db47}}
       
       - name: Deploy to hosting environment
         uses: OfficeDev/teamsfx-cli-action@v1
